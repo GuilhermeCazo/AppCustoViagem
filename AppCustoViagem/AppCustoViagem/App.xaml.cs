@@ -10,7 +10,7 @@ namespace AppCustoViagem
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new View.Inicio());
         }
 
         protected override void OnStart()

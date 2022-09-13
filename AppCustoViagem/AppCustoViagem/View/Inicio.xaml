@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCustoViagem.View.Inicio">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Button Text="Adicionar nova viagem" Clicked="Btn_Add_Viagem"></Button>
+
+            <Button Text="Lista de Viagem" Clicked="Btn_Lista_Viagem"></Button>
+
+            <Button Text="Adicionar novo Pedágio" Clicked="Btn_Add_Pedagio"></Button>
+
+            <Button Text="Lista de Pedágio" Clicked="Btn_Lista_Pedagio"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
