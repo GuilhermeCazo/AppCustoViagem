@@ -17,9 +17,20 @@ namespace AppCustoViagem.View
             InitializeComponent();
         }
 
+        private void ToolbarItem_Clicked_Pedagios(object sender, EventArgs e)
+        { }
+        private void ToolbarItem_Clicked_Somar(object sender, EventArgs e)
+        { }
+        private void ToolbarItem_Clicked_Salvar(object sender, EventArgs e)
+        { }
+
+
+
         private void Btn_Voltar_Inicio(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Inicio());
         }
+
+        
     }
 }

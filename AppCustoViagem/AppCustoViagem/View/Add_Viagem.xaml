@@ -1,13 +1,71 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppCustoViagem.View.Add_Viagem">
+             x:Class="AppCustoViagem.View.Add_Viagem"
+             Title="Dados da Viagem">
+
+    <ContentPage.ToolbarItems>
+        
+        <ToolbarItem Text="Pedágios" Clicked="ToolbarItem_Clicked_Pedagios" />
+        <ToolbarItem Text="Somar" Clicked="ToolbarItem_Clicked_Somar" />
+        <ToolbarItem Text="Salvar" Clicked="ToolbarItem_Clicked_Salvar" />
+
+    </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
         <StackLayout>
 
-            <Label Text="Aqui é a adicionar de viagem" />
+            <Label Text="Local da Viagem:" FontSize="20" FontAttributes="Bold"/>
 
-            <Button Text="´Voltar ao início" Clicked="Btn_Voltar_Inicio"></Button>
+
+            <Label Text="Origem:" />
+            <Entry x:Name="txt_origem" />
+
+            <Label Text="Destino:" />
+            <Entry x:Name="txt_destino" />
+
+            <Label Text="Ditância:" />
+            <Entry x:Name="txt_distancia" />
+
+
+            <Label Text="Custo:" FontSize="20" FontAttributes="Bold"/>
+
+            <Label Text="Km/L:" />
+            <Entry x:Name="txt_km_litro" />
+
+            <Label Text="Preço do Combustivel:" />
+            <Entry x:Name="txt_preco_combutivel" />
+
+
+            <Label Text="Custo da Viagem:" FontSize="20" FontAttributes="Bold"/>
+
+            <Label>
+
+                <Label.FormattedText>
+                    <FormattedString>
+
+                        <Span Text="Combustivel:" FontAttributes="Bold" FontSize="15"/>
+                        <Span x:Name="spn_custo_combustivel" />
+
+                    </FormattedString>
+                </Label.FormattedText>
+             </Label>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+
+                        <Span Text="Pedágios: " FontAttributes="Bold" FontSize="15"/>
+                        <Span x:Name="spn_custo_pedagios" TextColor="DarkRed"/>
+
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label x:Name="lbl_custo_viagem" FontSize="Title" 
+                           HorizontalTextAlignment="Center" 
+                           TextColor="DarkRed" />
+            
+            <Button Text="Voltar ao início" Clicked="Btn_Voltar_Inicio"></Button>
             
         </StackLayout>
     </ContentPage.Content>
