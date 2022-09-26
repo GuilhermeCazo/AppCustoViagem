@@ -4,7 +4,14 @@ using System.Text;
 
 namespace AppCustoViagem.Models
 {
-    internal class Pedagio
+    public class Pedagio
     {
+        string _localizacao;
+        string _valor;
+
+        public string Localizacao
+        {
+            //TERMINAR AQUI
+        }
     }
 }

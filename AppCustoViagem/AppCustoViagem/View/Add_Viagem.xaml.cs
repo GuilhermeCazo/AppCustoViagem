@@ -18,11 +18,17 @@ namespace AppCustoViagem.View
         }
 
         private void ToolbarItem_Clicked_Pedagios(object sender, EventArgs e)
-        { }
+        {
+            Navigation.PushAsync(new Lista_Pedagio());
+        }
         private void ToolbarItem_Clicked_Somar(object sender, EventArgs e)
-        { }
+        {
+        
+        }
         private void ToolbarItem_Clicked_Salvar(object sender, EventArgs e)
-        { }
+        { 
+        
+        }
 
 
 
